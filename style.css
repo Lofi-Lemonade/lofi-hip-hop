@@ -3,6 +3,9 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  Background-color: black;
+  background-image: url('https://i.pinimg.com/originals/b2/b0/2f/b2b02f3b94075334edb07f8e6f8c0d11.gif');
+  background-size: cover;
 }
 
 h1 {
