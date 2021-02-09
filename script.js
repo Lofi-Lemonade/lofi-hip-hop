@@ -1,24 +1,16 @@
 console.clear();
-console.clear();
-console.clear();
-console.clear();
-console.clear();
-var colors = require("colors");
+console.clear()
+console.clear()
+console.clear()
+console.clear()
+var colors = require('colors');
 console.log("%c Lofi Hip Hop Beats To Relax / Study To ✍🏫", " color: aqua");
-console.log(
-  "%c I hope this Website Helps You Relax / Study Better 🚀✍",
-  " color: blue"
-);
+console.log("%c I hope this Website Helps You Relax / Study Better 🚀✍", " color: blue");
 console.log("%c Have a good day 👋✍", " color: navy");
-console.log('OMG Rainbows!'.rainbow);
-
-
 dragElement(document.getElementById("mydiv"));
+
 function dragElement(elmnt) {
-  var pos1 = 0,
-    pos2 = 0,
-    pos3 = 0,
-    pos4 = 0;
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -47,8 +39,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-    elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
 
   function closeDragElement() {
@@ -57,3 +49,26 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+let clock = () => {
+  let date = new Date();
+  let hrs = date.getHours();
+  let mins = date.getMinutes();
+  let secs = date.getSeconds();
+  let period = "AM";
+  if (hrs == 0) {
+    hrs = 12;
+  } else if (hrs >= 12) {
+    hrs = hrs - 12;
+    period = "PM";
+  }
+  hrs = hrs < 10 ? "0" + hrs : hrs;
+  mins = mins < 10 ? "0" + mins : mins;
+  secs = secs < 10 ? "0" + secs : secs;
+
+  let time = `${hrs}:${mins}:${secs}:${period}`;
+  document.getElementById("clock").innerText = time;
+  setTimeout(clock, 1000);
+};
+
+clock();

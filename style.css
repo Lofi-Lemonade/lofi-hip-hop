@@ -9,6 +9,10 @@ body {
   background-color: #F1F1F1;
   text-align: center;
   padding: 10px;
+}
+widgetbot {
+  text-alig: center;
+}
 #mydiv {
   position: absolute;
 }
