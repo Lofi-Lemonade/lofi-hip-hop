@@ -3,9 +3,6 @@ console.clear()
 console.clear()
 console.clear()
 console.clear()
-console.log("%c Lofi Hip Hop Beats To Relax / Study To ✍🏫", " color: aqua");
-console.log("%c I hope this Website Helps You Relax / Study Better 🚀✍", " color: blue");
-console.log("%c Have a good day 👋✍", " color: navy");
 dragElement(document.getElementById("mydiv"));
 
 function dragElement(elmnt) {
@@ -48,3 +45,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+console.clear
+console.log("%c Lofi Hip Hop Beats To Relax / Study To ✍🏫", " color: aqua");
+console.log("%c I hope this Website Helps You Relax / Study Better 🚀✍", " color: blue");
+console.log("%c Have a good day 👋✍", " color: navy");
+console.log("%c T", " color: navy");
